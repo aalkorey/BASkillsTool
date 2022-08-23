@@ -456,7 +456,7 @@ ax.set_facecolor('xkcd:almost black')
 fig.patch.set_facecolor('xkcd:almost black')
 plt.pyplot.subplots_adjust(bottom=0.25)
 plt.pyplot.margins(x=0)
-plt.pyplot.savefig('pl_frequency_ranks.png')
+plt.pyplot.savefig('pl_frequency_ranks.PNG')
 
 # Bar graph for technical skills frequency ranks
 fig, ax = plt.pyplot.subplots(figsize=(14, 4))
@@ -479,7 +479,7 @@ fig.patch.set_facecolor('xkcd:almost black')
 plt.pyplot.setp(ax.get_xticklabels(), rotation=45, ha='right', fontsize=8)
 plt.pyplot.subplots_adjust(bottom=0.4)
 plt.pyplot.margins(x=0)
-plt.pyplot.savefig('ts_frequency_ranks.png')
+plt.pyplot.savefig('ts_frequency_ranks.PNG')
 
 # Bar graph for soft skills frequency ranks
 fig, ax = plt.pyplot.subplots(figsize=(14, 4))
@@ -502,7 +502,7 @@ fig.patch.set_facecolor('xkcd:almost black')
 plt.pyplot.setp(ax.get_xticklabels(), rotation=45, ha='right', fontsize=8)
 plt.pyplot.subplots_adjust(bottom=0.4)
 plt.pyplot.margins(x=0)
-plt.pyplot.savefig('ss_frequency_ranks.png')
+plt.pyplot.savefig('ss_frequency_ranks.PNG')
 
 # Bar graph for job type frequency ranks
 fig, ax = plt.pyplot.subplots(figsize=(14, 4))
@@ -525,7 +525,7 @@ fig.patch.set_facecolor('xkcd:almost black')
 plt.pyplot.setp(ax.get_xticklabels(), rotation=45, ha='right', fontsize=8)
 plt.pyplot.subplots_adjust(bottom=0.5)
 plt.pyplot.margins(x=0)
-plt.pyplot.savefig('jt_frequency_ranks.png')
+plt.pyplot.savefig('jt_frequency_ranks.PNG')
 
 # Bar graph for hiring company frequency ranks
 fig, ax = plt.pyplot.subplots(figsize=(14, 4))
@@ -548,7 +548,7 @@ fig.patch.set_facecolor('xkcd:almost black')
 plt.pyplot.setp(ax.get_xticklabels(), rotation=45, ha='right', fontsize=8)
 plt.pyplot.subplots_adjust(bottom=0.4)
 plt.pyplot.margins(x=0)
-plt.pyplot.savefig('hc_frequency_ranks.png')
+plt.pyplot.savefig('hc_frequency_ranks.PNG')
 
 
 # Define function to add count and percentages to pieces of pie chart
@@ -561,14 +561,14 @@ plt.pyplot.figure(facecolor='xkcd:almost black')
 textprops = dict(fontsize=6, color='xkcd:off white')
 plt.pyplot.pie(to_1D(job_info["Programming Languages"]).value_counts().values, labels=to_1D(job_info["Programming Languages"]).value_counts().index, autopct=label_function, textprops=textprops)
 plt.pyplot.title('Division of Programming Languages Among Jobs', size=10, color='xkcd:off white')
-plt.pyplot.savefig('pl_pie_chart.png')
+plt.pyplot.savefig('pl_pie_chart.PNG')
 
 # Donut chart for the same info as pie chart
 plt.pyplot.figure(facecolor='xkcd:almost black')
 textprops1 = dict(fontsize=6, color='xkcd:off white')
 plt.pyplot.pie(to_1D(job_info["Programming Languages"]).value_counts().values, labels=to_1D(job_info["Programming Languages"]).value_counts().index, autopct=label_function, textprops=textprops1, wedgeprops={'width': 0.3})
 plt.pyplot.title('Division of Programming Languages Among Jobs', size=10, color='xkcd:off white')
-plt.pyplot.savefig('pl_donut_chart.png')
+plt.pyplot.savefig('pl_donut_chart.PNG')
 
 # Visualization for association between programming languages and salary
 
@@ -633,7 +633,7 @@ ax.set_facecolor('xkcd:almost black')
 fig.patch.set_facecolor('xkcd:almost black')
 plt.pyplot.subplots_adjust(bottom=0.25)
 plt.pyplot.margins(x=0)
-plt.pyplot.savefig('pl_s_association.png')
+plt.pyplot.savefig('pl_s_association.PNG')
 
 # Visualization for association between technical skills and salary
 
@@ -680,7 +680,7 @@ fig.patch.set_facecolor('xkcd:almost black')
 plt.pyplot.setp(ax.get_xticklabels(), rotation=45, ha='right', fontsize=8)
 plt.pyplot.subplots_adjust(bottom=0.4)
 plt.pyplot.margins(x=0)
-plt.pyplot.savefig('ts_s_association.png')
+plt.pyplot.savefig('ts_s_association.PNG')
 
 # Visualization for association between soft skills and salary
 
@@ -727,7 +727,7 @@ fig.patch.set_facecolor('xkcd:almost black')
 plt.pyplot.setp(ax.get_xticklabels(), rotation=45, ha='right', fontsize=8)
 plt.pyplot.subplots_adjust(bottom=0.4)
 plt.pyplot.margins(x=0)
-plt.pyplot.savefig('ss_s_association.png')
+plt.pyplot.savefig('ss_s_association.PNG')
 
 
 # Report generation section
@@ -748,16 +748,16 @@ html = f'''
         <head>
         <body>
             <h1>{title_text}</h1>
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_frequency_ranks.png' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ts_frequency_ranks.png' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ss_frequency_ranks.png' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/jt_frequency_ranks.png' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_pie_chart.png' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_donut_chart.png' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/hc_frequency_ranks.png' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_s_association.png' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ts_s_association.png' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ss_s_association.png' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_frequency_ranks.PNG' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ts_frequency_ranks.PNG' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ss_frequency_ranks.PNG' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/jt_frequency_ranks.PNG' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_pie_chart.PNG' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_donut_chart.PNG' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/hc_frequency_ranks.PNG' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_s_association.PNG' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ts_s_association.PNG' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ss_s_association.PNG' width="700">
             <h2>{main_df_text}</h2>
             {job_info.to_html()}
             <h2>{association_df1_text}</h2>
