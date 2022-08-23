@@ -748,16 +748,16 @@ html = f'''
         <head>
         <body>
             <h1>{title_text}</h1>
-            <img src='pl_frequency_ranks.png' width="700">
-            <img src='ts_frequency_ranks.png' width="700">
-            <img src='ss_frequency_ranks.png' width="700">
-            <img src='jt_frequency_ranks.png' width="700">
-            <img src='pl_pie_chart.png' width="700">
-            <img src='pl_donut_chart.png' width="700">
-            <img src='hc_frequency_ranks.png' width="700">
-            <img src='pl_s_association.png' width="700">
-            <img src='ts_s_association.png' width="700">
-            <img src='ss_s_association.png' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_frequency_ranks.png' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ts_frequency_ranks.png' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ss_frequency_ranks.png' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/jt_frequency_ranks.png' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_pie_chart.png' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_donut_chart.png' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/hc_frequency_ranks.png' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_s_association.png' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ts_s_association.png' width="700">
+            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ss_s_association.png' width="700">
             <h2>{main_df_text}</h2>
             {job_info.to_html()}
             <h2>{association_df1_text}</h2>
