@@ -748,16 +748,16 @@ html = f'''
         <head>
         <body>
             <h1>{title_text}</h1>
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_frequency_ranks.PNG' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ts_frequency_ranks.PNG' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ss_frequency_ranks.PNG' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/jt_frequency_ranks.PNG' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_pie_chart.PNG' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_donut_chart.PNG' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/hc_frequency_ranks.PNG' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/pl_s_association.PNG' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ts_s_association.PNG' width="700">
-            <img src='/Users/azizalkorey/PycharmProjects/job_description_project.py/ss_s_association.PNG' width="700">
+            <img src='https://raw.githubusercontent.com/aalkorey/aalkorey.github.io/main/jds-images/pl_frequency_ranks.png' width="700">
+            <img src='https://raw.githubusercontent.com/aalkorey/aalkorey.github.io/main/jds-images/ts_frequency_ranks.png' width="700">
+            <img src='https://raw.githubusercontent.com/aalkorey/aalkorey.github.io/main/jds-images/ss_frequency_ranks.png' width="700">
+            <img src='https://raw.githubusercontent.com/aalkorey/aalkorey.github.io/main/jds-images/jt_frequency_ranks.png' width="700">
+            <img src='https://raw.githubusercontent.com/aalkorey/aalkorey.github.io/main/jds-images/pl_pie_chart.png' width="700">
+            <img src='https://raw.githubusercontent.com/aalkorey/aalkorey.github.io/main/jds-images/pl_donut_chart.png' width="700">
+            <img src='https://raw.githubusercontent.com/aalkorey/aalkorey.github.io/main/jds-images/hc_frequency_ranks.png' width="700">
+            <img src='https://raw.githubusercontent.com/aalkorey/aalkorey.github.io/main/jds-images/pl_s_association.png' width="700">
+            <img src='https://raw.githubusercontent.com/aalkorey/aalkorey.github.io/main/jds-images/ts_s_association.png' width="700">
+            <img src='https://raw.githubusercontent.com/aalkorey/aalkorey.github.io/main/jds-images/ss_s_association.png' width="700">
             <h2>{main_df_text}</h2>
             {job_info.to_html()}
             <h2>{association_df1_text}</h2>
